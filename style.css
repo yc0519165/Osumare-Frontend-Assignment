@@ -108,8 +108,8 @@ header {
   text-align: center;
   font-size: 35px;
 }
-.section2 p {
-  text-align: cente;
+.sect2para {
+  text-align: center;
   font-size: 22px;
   padding-top: 15px;
 }
@@ -628,12 +628,14 @@ header {
   padding: 70px;
 }
 .footer {
-  height: 657px;
-  width: 1220px;
   border-radius: 16px;
-  background-color: #4e9af1ad;
-}
+  background-color: #a2caf78e;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+  }
 
+  
 @media (max-width: 1024px) {
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -650,4 +652,110 @@ header {
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+}
+
+.social {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.social:hover {
+  background-color: #7cb3f1;
+}
+
+
+.lineNo1 {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.lineNo1 p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 480;
+  padding-bottom: 25px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.address h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.address span {
+  font-size: 16px;
+  color: #333;
+  font-size: 480;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.lineNo2 {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.lineNo2 h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.lineNo2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lineNo2 ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.lineNo3 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 20px;
+}
+
+.lineNo3 h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.socialIcon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.copyrights {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 16px;
+  font-weight: 500;
 }
